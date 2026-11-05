@@ -24,4 +24,100 @@ header {
 header h1 {
     color: #de9b35;
     margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #de9b35;
+    color: #12161a;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.hero {
+    background-color: #1b2228;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid #de9b35;
+}
+
+.hero h2 {
+    color: #de9b35;
+    margin-bottom: 10px;
+}
+
+.content-grid, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card, .gallery-item, .info-section {
+    background-color: #1b2228;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #2c353e;
+}
+
+.card h3, .info-section h2 {
+    color: #de9b35;
+    margin-bottom: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section ul, .info-section ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.info-section a {
+    color: #de9b35;
+}
+
+code {
+    background-color: #0d1013;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #e1e6eb;
+}
+
+footer {
+    background-color: #1b2228;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 1px solid #2c353e;
+    font-size: 0.9em;
+    color: #8b9bb0;
 }
